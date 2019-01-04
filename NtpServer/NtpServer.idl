@@ -1,0 +1,29 @@
+// NtpServer.idl : NtpServer.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(NtpServer.tlb)。
+
+[ uuid(EAB285A8-89BA-48B4-BCBA-2416F8A8F188), version(1.0) ]
+library NtpServer
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CNtpServerDoc 的主调度接口
+	
+	[ uuid(7D3339F8-DC8C-46D5-B834-D4428498636D) ]
+	dispinterface INtpServer
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CNtpServerDoc 的类信息
+	
+	[ uuid(4203E43E-C4A3-4D52-9D30-81E566B1CDD0) ]
+	coclass NtpServer
+	{
+		[default] dispinterface INtpServer;
+	};
+};
