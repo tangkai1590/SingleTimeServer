@@ -1,0 +1,17 @@
+REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则以下条目将
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+
+HKEY_CLASSES_ROOT\NtpServer.Application = NtpServer Application
+
+
+HKEY_CLASSES_ROOT\NtpServer.Application\CLSID = {4203E43E-C4A3-4D52-9D30-81E566B1CDD0}
+
+HKEY_CLASSES_ROOT\CLSID\{4203E43E-C4A3-4D52-9D30-81E566B1CDD0} = NtpServer Application
+HKEY_CLASSES_ROOT\CLSID\{4203E43E-C4A3-4D52-9D30-81E566B1CDD0}\ProgId = NtpServer.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{4203E43E-C4A3-4D52-9D30-81E566B1CDD0}\LocalServer32 = NtpServer.EXE
